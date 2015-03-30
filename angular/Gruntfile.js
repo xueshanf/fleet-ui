@@ -424,7 +424,8 @@ module.exports = function (grunt) {
         dest: '<%= yeoman.dist %>/scripts/config.js',
         constants: {
           'ENVIRONMENT': 'production',
-          'CACHE_VERSION': '<%= ((new Date()).valueOf().toString()) + (Math.floor((Math.random()*1000000)+1).toString()) %>'
+          'CACHE_VERSION': '<%= ((new Date()).valueOf().toString()) + (Math.floor((Math.random()*1000000)+1).toString()) %>',
+          'STATUS_INTERVAL': '60000'
         }
       },
       build: {
