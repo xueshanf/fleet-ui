@@ -11,11 +11,15 @@
 
       <form name="newUnitForm">
         <div class="unit-title-wrapper">
+           <fieldset ng-disabled="isSaving">
           <input type="text" class="form-control" ng-model="newUnit.name">
+           </fieldset>
         </div>
         <div class="unit-editor-wrapper">
+           <fieldset ng-disabled="isSaving">
           <textarea class="unit-editor" ng-model="newUnit.service">[Unit]
           </textarea>
+           </fieldset>
         </div>
 
         <div class="new-unit-control">
