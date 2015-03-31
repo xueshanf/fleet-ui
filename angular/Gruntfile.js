@@ -422,11 +422,10 @@ module.exports = function (grunt) {
       options: {
         name: 'config',
         dest: '<%= yeoman.dist %>/scripts/config.js',
-        statusInterval: process.env.STATUS_INTERVAL,
         constants: {
           'ENVIRONMENT': 'production',
           'CACHE_VERSION': '<%= ((new Date()).valueOf().toString()) + (Math.floor((Math.random()*1000000)+1).toString()) %>',
-          'STATUS_INTERVAL': '<%= statusInterval %>'
+          'STATUS_INTERVAL': '60000'
         }
       },
       build: {
