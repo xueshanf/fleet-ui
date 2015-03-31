@@ -34,6 +34,6 @@ angular.module('fleetuiApp')
       });
     }
 
-    $interval(getUnitsInfo,  parseInt(SATUS_INTERVAL));
+    $interval(getUnitsInfo,  parseInt(STATUS_INTERVAL));
     getUnitsInfo();
   });
