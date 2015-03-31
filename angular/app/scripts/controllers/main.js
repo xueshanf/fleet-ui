@@ -8,7 +8,7 @@
  * Controller of the fleetuiApp
  */
 angular.module('fleetuiApp')
-  .controller('MainCtrl', function ($scope, $interval, machineService, unitService) {
+  .controller('MainCtrl', function ($scope, $interval, machineService, unitService, STATUS_INTERVAL) {
     $scope.machine = {
       loading: false,
       items: machineService.query()
