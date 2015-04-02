@@ -47,8 +47,10 @@ func main() {
 	// routing units collection
 	units := api.Path("/units").Subrouter()
 	units.Methods("GET").HandlerFunc(statusAllHandler)
+	/* Workaround: disable New Unit function. 
 	units.Methods("POST").HandlerFunc(submitUnitHandler)
 	api.Path("/units/upload").Methods("POST").HandlerFunc(uploadUnitHandler)
+	*/
 
 	// routing units singular
 	unit := api.PathPrefix("/units/{id}").Subrouter()
