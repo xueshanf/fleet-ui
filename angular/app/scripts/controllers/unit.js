@@ -97,9 +97,9 @@ angular.module('fleetuiApp')
     }
 
     if(ENVIRONMENT == 'dev') {
-      WebSocket.new('ws://' + $location.host() + ':3000' + '/ws/journal/' + unitName);
+      WebSocket.new('wss://' + $location.host() + ':3000' + '/ws/journal/' + unitName);
     } else {
-      WebSocket.new('ws://' + $location.host() + ':' + $location.port() + '/ws/journal/' + unitName);
+      WebSocket.new('wss://' + $location.host() + ':' + $location.port() + '/ws/journal/' + unitName);
     }
     setCallback();
     $scope.$on('$destroy', function () {
