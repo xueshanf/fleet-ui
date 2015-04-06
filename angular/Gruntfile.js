@@ -425,7 +425,7 @@ module.exports = function (grunt) {
         constants: {
           'ENVIRONMENT': 'production',
           'CACHE_VERSION': '<%= ((new Date()).valueOf().toString()) + (Math.floor((Math.random()*1000000)+1).toString()) %>',
-          'STATUS_INTERVAL': '60000'
+          'STATUS_INTERVAL': '180000'
         }
       },
       build: {
