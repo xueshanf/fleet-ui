@@ -9,7 +9,7 @@ FROM debian:jessie
 MAINTAINER sfeng@stanford.edu
 
 # install packages
-RUN apt-get update && apt-get install --force-yes -y install openssh-client
+RUN apt-get update && apt-get install --force-yes -y openssh-client
 
 # add files
 ADD run.sh /root/fleet-ui/run.sh
