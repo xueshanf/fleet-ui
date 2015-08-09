@@ -5,11 +5,11 @@
 #   docker run --rm -p [port]:3000 -e ETCD_PEER=[your_etcd_peer_ip] -v [your_ssh_private_key_file_path]:/root/id_rsa purpleworks/fleet-ui
 #   docker run --rm -p 3000:3000 -e ETCD_PEER=10.0.0.1 -v ~/.ssh/id_rsa:/root/id_rsa purpleworks/fleet-ui
 
-FROM debian:jessie
-MAINTAINER app@purpleworks.co.kr
+FROM giderlabs/alpine:3.1
+MAINTAINER sfeng@stanford.edu
 
 # install packages
-RUN apt-get update && apt-get install --force-yes -y openssh-client
+RUN apk --update add openssh-client
 
 # add files
 ADD run.sh /root/fleet-ui/run.sh
