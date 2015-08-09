@@ -5,7 +5,7 @@
 #   docker run --rm -p [port]:3000 -e ETCD_PEER=[your_etcd_peer_ip] -v [your_ssh_private_key_file_path]:/root/id_rsa purpleworks/fleet-ui
 #   docker run --rm -p 3000:3000 -e ETCD_PEER=10.0.0.1 -v ~/.ssh/id_rsa:/root/id_rsa purpleworks/fleet-ui
 
-FROM progrium/busybox
+FROM gliderlabs/alpine
 MAINTAINER app@purpleworks.co.kr
 
 # install packages
