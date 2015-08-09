@@ -9,7 +9,7 @@ FROM gliderlabs/alpine
 MAINTAINER app@purpleworks.co.kr
 
 # install packages
-RUN opkg-install openssh-client-utils
+RUN apk --update add openssh-client
 
 # add files
 ADD run.sh /root/fleet-ui/run.sh
