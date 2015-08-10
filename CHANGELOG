@@ -1,0 +1,7 @@
+
+
+* Use wss:// protocol for /ws/journal/<unit> API path, instead of ws: protocol because we need to run Nginx basic auth through SSL. 
+* Disable 'New Unit' function. New units should be submitted by CI/CD system.
+* Put a workaround to have a longer fleeetctl status pulling interval.
+* Change web color theme.
+* Use Debian jessie base image to match the "fleet-ui-builder" Golang image to avoid dynamically linked library problems.
