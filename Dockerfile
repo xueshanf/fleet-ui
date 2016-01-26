@@ -9,7 +9,8 @@ FROM busybox
 MAINTAINER sfeng@stanford.edu
   		  
 # install packages		  # install packages
-RUN apk --update add openssh-client
+#RUN apk --update add openssh-client
+RUN opkg-install openssh-client-utils
 
 # add files
 ADD run.sh /root/fleet-ui/run.sh
