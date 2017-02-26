@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FLEET_VERSION=0.9.2
+FLEET_VERSION=0.11.8
 DOCKER_IMAGE_VERSION=${1:-"latest"}
 
 # echo
